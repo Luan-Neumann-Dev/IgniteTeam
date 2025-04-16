@@ -28,7 +28,7 @@ export function Groups() {
 
             />
 
-            <Button title="Criar"/>
+            <Button title="Criar nova turma"/>
         </Container>
     )
 
