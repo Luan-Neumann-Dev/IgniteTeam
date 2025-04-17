@@ -1,5 +1,5 @@
 import { Header } from "@components/Header";
-import { Container, Form, HeaderList, NumbersOfPlayers } from "./styles";
+import { Container, Form, HeaderList, NumberOfPlayers } from "./styles";
 import { Highlight } from "@components/Highlight";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Input } from "@components/Input";
@@ -39,10 +39,11 @@ export function Players() {
                         />
                     )}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                 />
-                <NumbersOfPlayers>
+                <NumberOfPlayers>
                     {players.length}
-                </NumbersOfPlayers>
+                </NumberOfPlayers>
             </HeaderList>
 
 
@@ -62,7 +63,7 @@ export function Players() {
                 ]}
             />
 
-            <Button title="Remvoer Turma" type="SECONDARY"/>
+            <Button title="Remover Turma" type="SECONDARY"/>
         </Container>
     )
 }
